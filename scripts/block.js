@@ -16,6 +16,14 @@ function removeShortsCaroussel() {
   });
 }
 
+function removeShortsCarousselFromSearch() {
+  const videosCaroussel = document.querySelectorAll('grid-shelf-view-model');
+  videosCaroussel.forEach(singleCaroussel => {
+    const isShortsCaroussel = singleCaroussel.querySelector('yt-section-header-view-model yt-shelf-header-layout h2 > span').textContent.trim() === 'Shorts';
+    if (isShortsCaroussel) singleCaroussel.remove();
+  });
+}
+
 function removeShortsFromVideoArea() {
   const shortsInVideoSideBar = document.querySelector("ytd-reel-shelf-renderer");
   if (shortsInVideoSideBar) shortsInVideoSideBar.remove();
@@ -25,6 +33,7 @@ function blockShorts() {
   setInterval(() => {
     removeSideBarIcon();
     removeShortsCaroussel();
+    removeShortsCarousselFromSearch();
     removeShortsFromVideoArea();
   }, 1000); // Each 1 second
 }
