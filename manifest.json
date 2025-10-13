@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Shorts Blocker",
   "description": "Block YouTube Shorts, avoiding distractions",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "default_locale": "en",
   "icons": {
     "16": "images/icon-16.png",

@@ -24,6 +24,14 @@ function removeShortsCarousselFromSearch() {
   });
 }
 
+function removeShortsBetweenVideos() {
+  const thumbnails = document.querySelectorAll('ytd-thumbnail a');
+  thumbnails.forEach(singleThumbnail => {
+    const isShortsThumbnail = singleThumbnail.href.includes('/shorts/');
+    if (isShortsThumbnail) singleThumbnail.closest('ytd-video-renderer').remove();
+  });
+}
+
 function removeShortsFromVideoArea() {
   const shortsInVideoSideBar = document.querySelector("ytd-reel-shelf-renderer");
   if (shortsInVideoSideBar) shortsInVideoSideBar.remove();
@@ -35,6 +43,7 @@ function blockShorts() {
     removeShortsCaroussel();
     removeShortsCarousselFromSearch();
     removeShortsFromVideoArea();
+    removeShortsBetweenVideos();
   }, 1000); // Each 1 second
 }
 
