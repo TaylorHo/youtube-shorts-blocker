@@ -10,6 +10,6 @@ We respect your privacy. YouTube Shorts Blocker Chrome Extension is committed to
 
 4. **License:** This extension is developed under the MIT license, allowing anyone to contribute to the development or create other extensions on top - or based - on this extension.
 
-By using YouTube Shorts Blocker, you acknowledge and agree to the terms outlined in this privacy policy. If you have any questions, please contact us at [taylor@hotay.dev](mailto:taylor@hotay.dev).
+By using YouTube Shorts Blocker, you acknowledge and agree to the terms outlined in this privacy policy. If you have any questions, please contact us at [privacy@hoffmann.io](mailto:privacy@hoffmann.io).
 
 *Last Updated: 10 of October, 2024*
